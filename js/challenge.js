@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function(){
         like = document.getElementById("heart"),
         pause = document.getElementById("pause");
 
-    let numbersArray = [];    
+    let numbersArray = [];
 
     let interval = setInterval(countUp, 1000);
-     
+
     function countUp() {
         counter.innerHTML = parseInt(counter.innerHTML) + 1;
     }
@@ -34,22 +34,22 @@ document.addEventListener("DOMContentLoaded", function(){
                 pause.innerHTML = "resume";
                 clearInterval(interval);
             });
-        } 
-          
+        }
 
-                
+
+
                     pause.addEventListener("click", () => {
                         if (pause.innerHTML = "resume") {
                             clearInterval(interval);
-                            setInterval(countUp, 1000); 
+                            setInterval(countUp, 1000);
                             pause.innerHTML = "pause";
 
                         }
                     });
-                        
-       
+
+
      }
-    
+
 
     // like.addEventListener("click", () => {
     //     let x = 0;
@@ -84,8 +84,3 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 });
-
-
-
-
-
